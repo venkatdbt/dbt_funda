@@ -2,6 +2,7 @@ version: 2
 
 sources:
   - name: jaffle_shop
+    description: A clone of a snowflake application database.
     database: raw
     schema: jaffle_shop_original
     freshness:
@@ -11,16 +12,20 @@ sources:
 
     tables:
       - name: customers
+        description: Raw customers data.
         freshness: null
         columns:
           - name: id
+            description: Primary key for customers.
             data_tests:
               - unique
               - not_null
                   
       - name: orders
+        description: Raw customers data.
         columns:
           - name: id
+            description: Primary key for orders.
             data_tests:
               - unique
               - not_null
