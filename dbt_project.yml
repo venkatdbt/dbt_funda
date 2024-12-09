@@ -41,5 +41,12 @@ models:
       materialized: table
     staging:
       materialized: view
+    legacy:
+      materialized: ephemeral
+    stage_refactor:
+      materialized: ephemeral
+    marts_refactor:
+      materialized: ephemeral
+      
 
 
